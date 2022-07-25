@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cookies",
+  "info": {
+    "singularName": "cookie",
+    "pluralName": "cookies",
+    "displayName": "Cookie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "CategoryId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "Duration": {
+      "type": "string"
+    },
+    "DesEn": {
+      "type": "string"
+    },
+    "DesTh": {
+      "type": "string"
+    },
+    "Url": {
+      "type": "string"
+    }
+  }
+}

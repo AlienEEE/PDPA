@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CatEn": {
+      "type": "string"
+    },
+    "CatTh": {
+      "type": "string"
+    },
+    "DesTh": {
+      "type": "string"
+    },
+    "DesEn": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "boolean"
+    },
+    "RecordId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::record.record",
+      "inversedBy": "CategoryId"
+    }
+  }
+}
